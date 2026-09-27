@@ -33,7 +33,8 @@ Get a coherent, polished MVP into the hands of real plant collectors and find ou
 | Care in the expanded specimen view (record, note, undo, snooze, skip from the record) | `specs/001-care-on-tiles.md` | Merged (#9) |
 | Require confirm password on sign up | — | Merged (#10) |
 | Delete account (Settings danger zone; immediate, permanent, no soft delete) | — | Merged (#11); not yet confirmed on production — needs a disposable-account test |
-| Rename Verdarium → Verdantry (a live `verdarium.green` was too close). Copy, docs and the two localStorage keys renamed with a fallback migration; the GitHub repo, Vercel project, and any Stripe Projects label are separate, Heinrich-run CLI steps | — | PR (code); infra renames pending |
+| Rename Verdarium → Verdantry (a live `verdarium.green` was too close). Copy, docs and the two localStorage keys renamed with a fallback migration | — | Merged (#13). GitHub repo renamed; Vercel/Stripe Projects labels not chased further (no clean CLI path, not user-facing) |
+| Shared collection view: "Begin your own archive" call to action | — | PR |
 | **Bug:** share links returned 404 in production (no SPA rewrite) | — | Fixed (#3) |
 | **Bug:** production blank after first Git-built deploy (Supabase env overridden in `vite.config.ts`) | — | Fixed (#4) |
 | **Bug:** export and import are not reachable in the app (`ExportCollectionForm` and `ImportCollectionForm` are never rendered) | — | Fixed in phase 3 (Settings; import now writes to the cloud archive) |
