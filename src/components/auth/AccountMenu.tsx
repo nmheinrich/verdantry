@@ -23,7 +23,7 @@ function getArchiveDescription(
 ): string {
   switch (status) {
     case "connecting":
-      return "Verdarium is opening your private botanical archive.";
+      return "Verdantry is opening your private botanical archive.";
 
     case "cloud":
       return "Your botanical collection is preserved in your private cloud archive.";
@@ -32,7 +32,7 @@ function getArchiveDescription(
       return "A legacy browser collection differs from your private cloud archive. Both remain preserved until you choose which collection to keep.";
 
     case "error":
-      return "The private cloud archive is not currently available. Verdarium has not changed its records.";
+      return "The private cloud archive is not currently available. Verdantry has not changed its records.";
   }
 }
 

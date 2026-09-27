@@ -2,7 +2,7 @@
 
 ## Now: free during validation
 
-- Verdarium is free with no limits while we validate the archive-first positioning.
+- Verdantry is free with no limits while we validate the archive-first positioning.
 - An optional **Buy me a coffee** link lets appreciative collectors support the project (`specs/002-support-link.md`). Clicks are a weak but useful willingness-to-pay signal.
 - Stripe is already the platform for provisioning (Stripe Projects). If and when paid plans arrive, Stripe Billing is the natural choice.
 

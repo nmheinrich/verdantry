@@ -241,7 +241,7 @@ export function CareReminderForm({
 
     if (!result.data.reminder) {
       setErrorMessage(
-        "Verdarium saved the care record but could not read the updated reminder.",
+        "Verdantry saved the care record but could not read the updated reminder.",
       );
       setPendingAction(null);
       return;
@@ -299,7 +299,7 @@ export function CareReminderForm({
 
     if (!result.data.reminder) {
       setErrorMessage(
-        "Verdarium saved the care record but could not read the updated reminder.",
+        "Verdantry saved the care record but could not read the updated reminder.",
       );
       setPendingAction(null);
       return;
@@ -338,7 +338,7 @@ export function CareReminderForm({
           <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
             Record a gentle recurring rhythm
             for tending this specimen.
-            Verdarium will surface the next
+            Verdantry will surface the next
             care date without turning the
             collection into a task list.
           </p>

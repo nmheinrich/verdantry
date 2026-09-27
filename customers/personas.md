@@ -8,7 +8,7 @@ These are working hypotheses. Update them as interviews come in.
 - Tracks them today in a spreadsheet, a notes app, nursery tags, and a camera roll
 - Cares about provenance: where the plant came from, when, which cultivar, and what it cost
 - Proud of the collection and shows it off
-- **Wins with Verdarium:** structured records, a whole-collection view, and a beautiful archive to share
+- **Wins with Verdantry:** structured records, a whole-collection view, and a beautiful archive to share
 - **Risk:** needs bulk entry and import. Adding 100 specimens by hand is a barrier.
 
 ## 2. The design-conscious plant owner

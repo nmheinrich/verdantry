@@ -34,31 +34,31 @@ function getCollectionLoadErrorDescription(
 ): string {
   switch (error.code) {
     case "storage-unavailable":
-      return "Verdarium cannot access browser storage right now. Your existing archive has not been changed.";
+      return "Verdantry cannot access browser storage right now. Your existing archive has not been changed.";
 
     case "invalid-json":
-      return "The saved botanical archive could not be read safely. Verdarium has left the stored data unchanged.";
+      return "The saved botanical archive could not be read safely. Verdantry has left the stored data unchanged.";
 
     case "invalid-schema":
-      return "The saved archive does not match the collection format Verdarium expects. The stored data has not been changed.";
+      return "The saved archive does not match the collection format Verdantry expects. The stored data has not been changed.";
 
     case "unsupported-version":
-      return "This botanical archive was created with a version of Verdarium that this build cannot open safely.";
+      return "This botanical archive was created with a version of Verdantry that this build cannot open safely.";
 
     case "invalid-specimen":
-      return "One or more specimen records in the saved archive could not be validated. Verdarium has left the stored data unchanged.";
+      return "One or more specimen records in the saved archive could not be validated. Verdantry has left the stored data unchanged.";
 
     case "duplicate-id":
       return "The saved archive contains conflicting specimen records and could not be opened safely. The stored data has not been changed.";
 
     case "specimen-not-found":
-      return "Verdarium could not locate a botanical record expected in the saved archive.";
+      return "Verdantry could not locate a botanical record expected in the saved archive.";
 
     case "write-failed":
-      return "Verdarium encountered a storage problem while opening the botanical archive. Your existing data has not been intentionally changed.";
+      return "Verdantry encountered a storage problem while opening the botanical archive. Your existing data has not been intentionally changed.";
 
     default:
-      return "Verdarium was unable to safely open the botanical archive. Your existing stored collection has been left unchanged.";
+      return "Verdantry was unable to safely open the botanical archive. Your existing stored collection has been left unchanged.";
   }
 }
 

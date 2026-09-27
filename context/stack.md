@@ -25,9 +25,9 @@
 
 | Concern | Tool |
 |---|---|
-| Version control | GitHub — `nmheinrich/verdarium` (**public**) |
-| Hosting | Vercel (Hobby), project `verdarium`, live at https://verdarium-neon.vercel.app. Git-connected to `nmheinrich/verdarium` since 2026-09-24: pushed branches get preview deploys (protected by Vercel login), and merging to `main` deploys to production. `vercel.json` rewrites extensionless paths (such as `/shared/:token`) to `index.html` |
-| Database, auth | Supabase (Free), project `verdarium`, region Americas |
+| Version control | GitHub — `nmheinrich/verdarium`, being renamed to `nmheinrich/verdantry` (Heinrich runs `gh repo rename`) (**public**) |
+| Hosting | Vercel (Hobby), project `verdarium` (name not yet changed — no confirmed CLI path; see ROADMAP), live at https://verdarium-neon.vercel.app (URL unchanged; the product is embedded via iframe at `heinrichnowak.work/verdantry` on Heinrich's personal site, needing no app-side changes). Git-connected since 2026-09-24: pushed branches get preview deploys (protected by Vercel login), and merging to `main` deploys to production. `vercel.json` rewrites extensionless paths (such as `/shared/:token`) to `index.html` |
+| Database, auth | Supabase (Free), project `verdarium` (dashboard display name only; project ref/URL and env vars are unaffected either way), region Americas |
 | Provisioning and credentials | Stripe Projects (`stripe projects status`, `stripe projects env`, `stripe projects env --pull`) |
 
 ### Environment variables

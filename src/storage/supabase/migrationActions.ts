@@ -32,7 +32,7 @@ function conflictFailure(): MigrationActionResult {
     error: {
       code: "sync-conflict",
       message:
-        "The local and cloud collections both contain different data. Verdarium will not overwrite either collection automatically.",
+        "The local and cloud collections both contain different data. Verdantry will not overwrite either collection automatically.",
     },
   };
 }

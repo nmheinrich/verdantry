@@ -3,7 +3,7 @@
 **Status:** on hold (2026-09-24) · **Roadmap:** Later · **Owner:** Heinrich
 
 ## Problem
-Verdarium is free during validation. Appreciative collectors have no way to support it, and we have no lightweight signal of willingness to pay.
+Verdantry is free during validation. Appreciative collectors have no way to support it, and we have no lightweight signal of willingness to pay.
 
 ## Goal
 A tasteful, optional support link that fits the archive tone.
@@ -12,8 +12,8 @@ A tasteful, optional support link that fits the archive tone.
 Payments inside the app, paywalls, and nag prompts.
 
 ## User experience
-- Placement: the Settings view (an "About Verdarium" section) and the account menu. Never on the collection or care surfaces.
-- Copy (a draft in the archive voice): "Verdarium is free while it grows. If it has earned a place in your collection, you can support its care." → **Support Verdarium**
+- Placement: the Settings view (an "About Verdantry" section) and the account menu. Never on the collection or care surfaces.
+- Copy (a draft in the archive voice): "Verdantry is free while it grows. If it has earned a place in your collection, you can support its care." → **Support Verdantry**
 - Opens the Buy me a coffee page in a new tab (`rel="noopener noreferrer"`).
 - No shouting orange Buy me a coffee branding. Use a themed `Button` variant.
 

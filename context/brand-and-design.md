@@ -2,7 +2,7 @@
 
 ## Source of truth
 
-**The Verdarium design system artifact:** https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN
+**The Verdantry design system artifact:** https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN
 
 - Read its `project/README.md` (the brand book) and `project/tokens.json` before any UI work. Read them through the Artifact tool, not by web-fetching.
 - It defines tokens for all three themes, type, spacing, radius, shadows, and five UI components: Button, IconButton, Input, Badge, Surface.

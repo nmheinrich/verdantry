@@ -26,7 +26,7 @@ export function ArchiveEntry({
     <>
       <PageHeader
         eyebrow="Private Botanical Archive"
-        title="Verdarium"
+        title="Verdantry"
         description="A quiet, enduring collection for documenting, studying, and caring for botanical specimens."
       />
 
@@ -95,7 +95,7 @@ export function ArchiveEntry({
           </h2>
 
           <p className="mt-4 text-sm leading-6 text-[var(--color-text-secondary)]">
-            Verdarium keeps each botanical archive
+            Verdantry keeps each botanical archive
             separate and grants access only to its owner.
             Legacy browser collections are preserved until
             their migration is complete.

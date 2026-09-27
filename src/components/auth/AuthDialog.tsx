@@ -356,7 +356,7 @@ export function AuthDialog({
                   {confirmationEmail
                     ? "Confirm your email"
                     : mode === "signIn"
-                      ? "Enter Verdarium"
+                      ? "Enter Verdantry"
                       : "Create an account"}
                 </h2>
 

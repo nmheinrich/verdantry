@@ -301,13 +301,13 @@ function normalizeSharingError(
     case "42501":
       return createSharingError(
         code,
-        "Verdarium could not verify access to this collection. Please sign in again and retry.",
+        "Verdantry could not verify access to this collection. Please sign in again and retry.",
       );
 
     default:
       return createSharingError(
         code,
-        "Verdarium could not update collection sharing. Please try again.",
+        "Verdantry could not update collection sharing. Please try again.",
       );
   }
 }
@@ -344,7 +344,7 @@ export async function loadCollectionSharingState(): Promise<
         success: false,
         error: createSharingError(
           "collection_not_found",
-          "Verdarium could not locate the private collection.",
+          "Verdantry could not locate the private collection.",
         ),
       };
     }
@@ -357,7 +357,7 @@ export async function loadCollectionSharingState(): Promise<
         success: false,
         error: createSharingError(
           "invalid_sharing_state",
-          "Verdarium received an unexpected sharing record.",
+          "Verdantry received an unexpected sharing record.",
         ),
       };
     }
@@ -371,7 +371,7 @@ export async function loadCollectionSharingState(): Promise<
       success: false,
       error: createSharingError(
         "sharing_state_network_error",
-        "Verdarium could not reach the private archive. Please check your connection and try again.",
+        "Verdantry could not reach the private archive. Please check your connection and try again.",
       ),
     };
   }
@@ -412,7 +412,7 @@ export async function updateCollectionSharing(
         success: false,
         error: createSharingError(
           "invalid_sharing_response",
-          "Verdarium received an unexpected response while updating collection sharing. Please try again.",
+          "Verdantry received an unexpected response while updating collection sharing. Please try again.",
         ),
       };
     }
@@ -426,7 +426,7 @@ export async function updateCollectionSharing(
       success: false,
       error: createSharingError(
         "sharing_network_error",
-        "Verdarium could not reach the archive. Please check your connection and try again.",
+        "Verdantry could not reach the archive. Please check your connection and try again.",
       ),
     };
   }
@@ -486,7 +486,7 @@ export async function loadSharedCollection(
         success: false,
         error: createSharingError(
           "invalid_shared_collection_response",
-          "Verdarium could not open this botanical archive.",
+          "Verdantry could not open this botanical archive.",
         ),
       };
     }
@@ -500,7 +500,7 @@ export async function loadSharedCollection(
       success: false,
       error: createSharingError(
         "shared_collection_network_error",
-        "Verdarium could not reach this botanical archive. Please check your connection and try again.",
+        "Verdantry could not reach this botanical archive. Please check your connection and try again.",
       ),
     };
   }

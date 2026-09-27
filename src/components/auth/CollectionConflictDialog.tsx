@@ -248,7 +248,7 @@ export function CollectionConflictDialog({
                   id="collection-conflict-description"
                   className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]"
                 >
-                  Verdarium found an older collection in
+                  Verdantry found an older collection in
                   this browser that differs from your
                   private cloud archive. Neither collection
                   has been changed.
@@ -321,7 +321,7 @@ export function CollectionConflictDialog({
               <p className="mt-6 text-xs leading-5 text-[var(--color-text-muted)]">
                 This decision replaces one collection in
                 full. Once migration is complete, the
-                private cloud archive becomes Verdarium’s
+                private cloud archive becomes Verdantry’s
                 authoritative collection.
               </p>
 

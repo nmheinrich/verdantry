@@ -105,7 +105,7 @@ function validateRequiredFields(
 }
 
 function getEditSpecimenErrorMessage(): string {
-  return "Verdarium could not save these changes to the private archive. Your edits have been preserved so you can try again.";
+  return "Verdantry could not save these changes to the private archive. Your edits have been preserved so you can try again.";
 }
 
 export function EditSpecimenForm({

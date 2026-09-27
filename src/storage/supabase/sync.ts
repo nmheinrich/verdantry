@@ -80,7 +80,7 @@ export async function inspectCollectionSyncState(): Promise<CollectionSyncResult
       error: {
         code: localResult.error.code,
         message:
-          "Verdarium could not inspect the local collection.",
+          "Verdantry could not inspect the local collection.",
       },
     };
   }

@@ -171,7 +171,7 @@ export function fromSupabaseSpecimenRow(
         .join("; ");
 
     throw new Error(
-      `Supabase specimen "${row.id}" failed Verdarium validation: ${issueSummary}`,
+      `Supabase specimen "${row.id}" failed Verdantry validation: ${issueSummary}`,
     );
   }
 

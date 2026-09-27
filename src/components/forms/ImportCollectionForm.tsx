@@ -36,7 +36,7 @@ interface PendingImport {
 }
 
 function getInvalidArchiveMessage(): string {
-  return "Verdarium could not validate the selected file as a compatible botanical archive. Your current collection has not been changed.";
+  return "Verdantry could not validate the selected file as a compatible botanical archive. Your current collection has not been changed.";
 }
 
 export function ImportCollectionForm({
@@ -93,7 +93,7 @@ export function ImportCollectionForm({
       fileContents = await file.text();
     } catch {
       setErrorMessage(
-        "Verdarium could not read the selected file. Your current collection has not been changed.",
+        "Verdantry could not read the selected file. Your current collection has not been changed.",
       );
       clearFileInput();
       return;
@@ -174,7 +174,7 @@ export function ImportCollectionForm({
           id="import-collection-description"
           className="mt-2 text-sm leading-6 text-[var(--color-text-secondary)]"
         >
-          Select a Verdarium JSON file to replace
+          Select a Verdantry JSON file to replace
           the current botanical archive. The file is
           validated before anything is written.
         </p>
@@ -185,7 +185,7 @@ export function ImportCollectionForm({
           htmlFor="collection-import-file"
           className="metadata-label"
         >
-          Verdarium JSON file
+          Verdantry JSON file
         </label>
 
         <input

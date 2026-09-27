@@ -211,7 +211,7 @@ export function SharedCollectionView({
                 ) : (
                   <p className="mt-5 max-w-2xl text-base leading-7 text-[var(--color-text-secondary)]">
                     A read-only botanical record
-                    shared through Verdarium.
+                    shared through Verdantry.
                   </p>
                 )}
               </div>

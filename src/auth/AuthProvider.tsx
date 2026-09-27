@@ -87,7 +87,7 @@ export function AuthProvider({
             status: "error",
             user: null,
             message:
-              "Verdarium could not restore the private session. Your browser collection remains unchanged.",
+              "Verdantry could not restore the private session. Your browser collection remains unchanged.",
           });
           return;
         }
@@ -107,7 +107,7 @@ export function AuthProvider({
           status: "error",
           user: null,
           message:
-            "Verdarium could not restore the private session. Your browser collection remains unchanged.",
+            "Verdantry could not restore the private session. Your browser collection remains unchanged.",
         });
       });
 

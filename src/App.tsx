@@ -543,7 +543,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not reach the private archive. Your entered information has been preserved.",
+            "Verdantry could not reach the private archive. Your entered information has been preserved.",
         };
       }
 
@@ -556,7 +556,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not save this specimen to the private archive. Your entered information has been preserved.",
+            "Verdantry could not save this specimen to the private archive. Your entered information has been preserved.",
         };
       }
 
@@ -589,7 +589,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not reach the private archive. Your edits have been preserved.",
+            "Verdantry could not reach the private archive. Your edits have been preserved.",
         };
       }
 
@@ -602,7 +602,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not save these changes to the private archive. Your edits have been preserved.",
+            "Verdantry could not save these changes to the private archive. Your edits have been preserved.",
         };
       }
 
@@ -670,7 +670,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not reach the private archive. Your current collection has not been changed.",
+            "Verdantry could not reach the private archive. Your current collection has not been changed.",
         };
       }
 
@@ -683,7 +683,7 @@ export default function App() {
         return {
           success: false,
           message:
-            "Verdarium could not import this archive. Your current collection has not been changed.",
+            "Verdantry could not import this archive. Your current collection has not been changed.",
         };
       }
 
@@ -833,7 +833,7 @@ export default function App() {
 
       if (!storeResult.success) {
         setDeleteError(
-          "Verdarium could not reach the private archive. This specimen remains unchanged.",
+          "Verdantry could not reach the private archive. This specimen remains unchanged.",
         );
 
         return;
@@ -846,7 +846,7 @@ export default function App() {
 
       if (!result.success) {
         setDeleteError(
-          "Verdarium could not remove this specimen. The botanical record remains in your collection.",
+          "Verdantry could not remove this specimen. The botanical record remains in your collection.",
         );
 
         return;
@@ -1141,7 +1141,7 @@ export default function App() {
             </h1>
 
             <p className="mt-4 max-w-xl text-sm leading-6 text-[var(--color-text-secondary)]">
-              Verdarium is opening
+              Verdantry is opening
               the read-only botanical
               record associated with
               this sharing link.
@@ -1243,7 +1243,7 @@ export default function App() {
           <ErrorState
             eyebrow="Record unavailable"
             title="This botanical record is no longer available"
-            description="Verdarium could not locate the selected specimen in the private collection."
+            description="Verdantry could not locate the selected specimen in the private collection."
             actions={
               <Button
                 variant="secondary"
@@ -1387,7 +1387,7 @@ export default function App() {
                   </p>
 
                   <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
-                    Verdarium is
+                    Verdantry is
                     retrieving your
                     botanical
                     collection.
@@ -1400,7 +1400,7 @@ export default function App() {
                 <div className="mt-8">
                   <ErrorState
                     eyebrow="Private archive unavailable"
-                    title="Verdarium could not open the collection"
+                    title="Verdantry could not open the collection"
                     description={
                       cloudError ??
                       "The private cloud archive is temporarily unavailable. No records have been changed."
@@ -1532,7 +1532,7 @@ export default function App() {
                   </p>
 
                   <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
-                    Verdarium is
+                    Verdantry is
                     retrieving the
                     care rhythms
                     preserved with
@@ -1886,7 +1886,7 @@ export default function App() {
             <PageHeader
               eyebrow="Archive Preferences"
               title="Settings"
-              description="Adjust the appearance of Verdarium and review your private archive."
+              description="Adjust the appearance of Verdantry and review your private archive."
             />
 
             <div className="mt-8 max-w-3xl space-y-6">
@@ -2007,7 +2007,7 @@ export default function App() {
                     </h2>
 
                     <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
-                      Verdarium
+                      Verdantry
                       preserves this
                       botanical
                       collection in
