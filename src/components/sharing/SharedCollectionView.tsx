@@ -322,7 +322,43 @@ export function SharedCollectionView({
               </Surface>
             )}
 
-            <footer className="mt-12 border-t border-[var(--color-border)] pt-6 sm:mt-16">
+            <Surface className="mt-12 p-8 sm:mt-16 sm:p-10">
+              <section
+                aria-labelledby="shared-collection-cta-heading"
+                className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div className="max-w-xl">
+                  <p className="metadata-label">
+                    Private by design
+                  </p>
+
+                  <h2
+                    id="shared-collection-cta-heading"
+                    className="mt-3 font-display type-title text-[var(--color-text-primary)]"
+                  >
+                    Begin your own botanical
+                    archive
+                  </h2>
+
+                  <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
+                    Verdantry is free to use.
+                    Catalog your own collection,
+                    with its own private
+                    records, care history, and
+                    sharing controls.
+                  </p>
+                </div>
+
+                <a
+                  href="/"
+                  className="inline-flex h-10 shrink-0 items-center justify-center whitespace-nowrap rounded-[var(--radius-md)] border border-transparent bg-[var(--color-botanical)] px-[1.125rem] text-sm font-medium leading-none tracking-[0.005em] text-[var(--color-text-on-botanical)] shadow-[var(--shadow-control)] transition-[background-color,box-shadow,transform] duration-[160ms] ease-[var(--ease-standard)] hover:bg-[var(--color-botanical-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)] active:translate-y-[0.5px] active:scale-[0.985]"
+                >
+                  Begin your archive
+                </a>
+              </section>
+            </Surface>
+
+            <footer className="mt-8 border-t border-[var(--color-border)] pt-6">
               <p className="max-w-2xl text-xs leading-5 text-[var(--color-text-muted)]">
                 This shared view contains only
                 selected botanical information.
