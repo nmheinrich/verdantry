@@ -2,9 +2,9 @@
 look at AGENTS.md for your rules
 <!-- stripe-projects-cli managed:claude-md:end -->
 
-# Verdarium — working agreement
+# Verdantry — working agreement
 
-Verdarium is a premium digital botanical archive: a place to catalog, organize, and care for a personal plant collection, presented like a herbarium or museum catalog rather than a task app. Read `context/product.md` before making product or UX decisions.
+Verdantry is a premium digital botanical archive: a place to catalog, organize, and care for a personal plant collection, presented like a herbarium or museum catalog rather than a task app. Read `context/product.md` before making product or UX decisions.
 
 ## Current goal
 
@@ -51,7 +51,7 @@ npm run build    # tsc -b && vite build — must pass before any PR
 - Follow `routines/supabase-migration-check.md` for any migration PR.
 
 **Product and design**
-- The **Verdarium design system** artifact (https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN) is the visual source of truth. Read its `project/README.md` through the Artifact tool before any UI work. Summary and rules are in `context/brand-and-design.md`.
+- The **Verdantry design system** artifact (https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN) is the visual source of truth. Read its `project/README.md` through the Artifact tool before any UI work. Summary and rules are in `context/brand-and-design.md`.
 - Collection first, care second. Care supports the archive and must never make it feel like a checklist app.
 - Use curated botanical illustrations (`src/constants/illustrations.ts`), not photography.
 - Use design tokens and `components/ui` primitives. No hardcoded colors. All three themes (Archive, Herbarium, Night Archive) must look right.

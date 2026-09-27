@@ -7,7 +7,7 @@
 - Setting: home / household / professional
 - How they track plants today:
 
-## Current workflow (before showing Verdarium)
+## Current workflow (before showing Verdantry)
 - Walk me through the last time you added a new plant. What did you record, and where?
 - When did you last lose track of something (care, provenance, a name)?
 - How do you show your collection to other people?

@@ -1,6 +1,6 @@
 import type { ThemeId } from '../types';
 
-export const APP_NAME = 'Verdarium';
+export const APP_NAME = 'Verdantry';
 
 export const APP_DESCRIPTION =
   'A curated digital botanical collection for organizing and preserving plant specimens.';
@@ -13,4 +13,4 @@ export const DEFAULT_THEME: ThemeId = 'archive';
 
 export const DEFAULT_SORT_DIRECTION = 'ascending';
 
-export const COLLECTION_STORAGE_KEY = 'verdarium.collection';
+export const COLLECTION_STORAGE_KEY = 'verdantry.collection';

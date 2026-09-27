@@ -43,7 +43,7 @@ export function createCollectionExport(
       error: {
         code: "write-failed",
         message:
-          "Verdarium could not serialize the collection for export.",
+          "Verdantry could not serialize the collection for export.",
       },
     };
   }

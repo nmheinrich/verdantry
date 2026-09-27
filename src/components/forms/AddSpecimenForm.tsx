@@ -90,7 +90,7 @@ function validateRequiredFields(
 }
 
 function getAddSpecimenErrorMessage(): string {
-  return "Verdarium could not save this specimen to the private archive. Your entered information has been preserved so you can try again.";
+  return "Verdantry could not save this specimen to the private archive. Your entered information has been preserved so you can try again.";
 }
 
 export function AddSpecimenForm({

@@ -53,7 +53,7 @@ async function getAuthenticatedUserId(): Promise<
       success: false,
       error: {
         code: "auth-check-failed",
-        message: "Verdarium could not verify the signed-in user.",
+        message: "Verdantry could not verify the signed-in user.",
       },
     };
   }
@@ -86,7 +86,7 @@ async function findCollection(
   if (error) {
     return failure(
       "collection-read-failed",
-      "Verdarium could not load the cloud collection.",
+      "Verdantry could not load the cloud collection.",
     );
   }
 
@@ -118,7 +118,7 @@ async function createCollection(
   if (error) {
     return failure(
       "collection-create-failed",
-      "Verdarium could not create the cloud collection.",
+      "Verdantry could not create the cloud collection.",
     );
   }
 

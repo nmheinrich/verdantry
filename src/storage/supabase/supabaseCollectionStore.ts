@@ -39,7 +39,7 @@ export function createSupabaseCollectionStore(
       if (error) {
         return failure(
           "remote-read-failed",
-          "Verdarium could not load the cloud collection.",
+          "Verdantry could not load the cloud collection.",
         );
       }
 
@@ -57,7 +57,7 @@ export function createSupabaseCollectionStore(
         } catch {
             return failure(
                 "invalid-remote-data",
-                "Verdarium received invalid specimen data from cloud storage.",
+                "Verdantry received invalid specimen data from cloud storage.",
             );
         }
     },
@@ -83,7 +83,7 @@ export function createSupabaseCollectionStore(
       if (error) {
         return failure(
           "remote-replace-failed",
-          "Verdarium could not replace the cloud collection.",
+          "Verdantry could not replace the cloud collection.",
         );
       }
 
@@ -105,7 +105,7 @@ export function createSupabaseCollectionStore(
       if (error) {
         return failure(
           "remote-write-failed",
-          "Verdarium could not save the specimen to cloud storage.",
+          "Verdantry could not save the specimen to cloud storage.",
         );
       }
 
@@ -130,7 +130,7 @@ export function createSupabaseCollectionStore(
       if (error) {
         return failure(
           "remote-write-failed",
-          "Verdarium could not update the specimen in cloud storage.",
+          "Verdantry could not update the specimen in cloud storage.",
         );
       }
 
@@ -157,7 +157,7 @@ export function createSupabaseCollectionStore(
       if (error) {
         return failure(
           "remote-write-failed",
-          "Verdarium could not remove the specimen from cloud storage.",
+          "Verdantry could not remove the specimen from cloud storage.",
         );
       }
 

@@ -6,13 +6,13 @@ const supabasePublishableKey =
 
 if (!supabaseUrl) {
   throw new Error(
-    "Missing VITE_SUPABASE_URL. Configure the Supabase project URL before starting Verdarium.",
+    "Missing VITE_SUPABASE_URL. Configure the Supabase project URL before starting Verdantry.",
   );
 }
 
 if (!supabasePublishableKey) {
   throw new Error(
-    "Missing VITE_SUPABASE_PUBLISHABLE_KEY. Configure the Supabase publishable key before starting Verdarium.",
+    "Missing VITE_SUPABASE_PUBLISHABLE_KEY. Configure the Supabase publishable key before starting Verdantry.",
   );
 }
 

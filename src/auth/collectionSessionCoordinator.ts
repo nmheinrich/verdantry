@@ -35,19 +35,19 @@ interface LegacyCleanupResult {
 }
 
 const conflictMessage =
-  "A legacy collection in this browser differs from your private cloud archive. Verdarium has preserved both until you choose which collection to keep.";
+  "A legacy collection in this browser differs from your private cloud archive. Verdantry has preserved both until you choose which collection to keep.";
 
 const initializationErrorMessage =
-  "Verdarium could not open the private cloud collection. The legacy browser archive remains unchanged.";
+  "Verdantry could not open the private cloud collection. The legacy browser archive remains unchanged.";
 
 const migrationErrorMessage =
-  "Verdarium could not migrate the legacy browser collection to the private cloud. The browser archive remains unchanged.";
+  "Verdantry could not migrate the legacy browser collection to the private cloud. The browser archive remains unchanged.";
 
 const conflictResolutionErrorMessage =
-  "Verdarium could not complete the archive selection. Both collections remain preserved, and you can try again.";
+  "Verdantry could not complete the archive selection. Both collections remain preserved, and you can try again.";
 
 const cleanupWarningMessage =
-  "The private cloud archive is ready, but Verdarium could not remove the legacy browser copy. Your cloud collection remains unchanged.";
+  "The private cloud archive is ready, but Verdantry could not remove the legacy browser copy. Your cloud collection remains unchanged.";
 
 function readyOutcome(
   specimens: Specimen[],

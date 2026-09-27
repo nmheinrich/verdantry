@@ -23,11 +23,11 @@ function createExportFileName(): string {
     today.getDate(),
   ).padStart(2, "0");
 
-  return `verdarium-collection-${year}-${month}-${day}.json`;
+  return `verdantry-collection-${year}-${month}-${day}.json`;
 }
 
 function getExportErrorMessage(): string {
-  return "Verdarium could not prepare this archive for export. Your collection has not been changed, so you can try again.";
+  return "Verdantry could not prepare this archive for export. Your collection has not been changed, so you can try again.";
 }
 
 export function ExportCollectionForm({

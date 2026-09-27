@@ -210,7 +210,7 @@ export function CollectionSharingSettings() {
       );
     } catch {
       setErrorMessage(
-        "Verdarium could not copy the link automatically. You can select and copy it manually.",
+        "Verdantry could not copy the link automatically. You can select and copy it manually.",
       );
     }
   }
@@ -234,7 +234,7 @@ export function CollectionSharingSettings() {
           </h2>
 
           <p className="mt-3 text-sm leading-6 text-[var(--color-text-secondary)]">
-            Verdarium is reading the sharing
+            Verdantry is reading the sharing
             status of your botanical archive.
           </p>
         </section>

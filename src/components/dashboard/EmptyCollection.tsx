@@ -30,7 +30,7 @@ export function EmptyCollection({
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm leading-6 text-[var(--color-text-secondary)] sm:text-base sm:leading-7">
-              Verdarium keeps each plant as a specimen record—a quiet place
+              Verdantry keeps each plant as a specimen record—a quiet place
               for botanical identity, provenance, condition, location, and
               care.
             </p>

@@ -99,7 +99,7 @@ function normalizeAuthError(error: unknown): AuthError {
     default:
       return createAuthError(
         code,
-        "Verdarium could not complete the account request. Please try again.",
+        "Verdantry could not complete the account request. Please try again.",
       );
   }
 }
@@ -162,7 +162,7 @@ export async function signUpWithPassword(
         success: false,
         error: createAuthError(
           "missing_auth_user",
-          "Verdarium could not create the account. Please try again.",
+          "Verdantry could not create the account. Please try again.",
         ),
       };
     }
@@ -189,7 +189,7 @@ export async function signUpWithPassword(
       success: false,
       error: createAuthError(
         "auth_network_error",
-        "Verdarium could not reach the private archive. Please check your connection and try again.",
+        "Verdantry could not reach the private archive. Please check your connection and try again.",
       ),
     };
   }
@@ -223,7 +223,7 @@ export async function signInWithPassword(
         success: false,
         error: createAuthError(
           "missing_auth_session",
-          "Verdarium could not establish a private session. Please try again.",
+          "Verdantry could not establish a private session. Please try again.",
         ),
       };
     }
@@ -239,7 +239,7 @@ export async function signInWithPassword(
       success: false,
       error: createAuthError(
         "auth_network_error",
-        "Verdarium could not reach the private archive. Please check your connection and try again.",
+        "Verdantry could not reach the private archive. Please check your connection and try again.",
       ),
     };
   }
@@ -274,7 +274,7 @@ export async function deleteOwnAccount(): Promise<AuthResult<void>> {
       success: false,
       error: createAuthError(
         "auth_network_error",
-        "Verdarium could not reach the private archive. Please check your connection and try again.",
+        "Verdantry could not reach the private archive. Please check your connection and try again.",
       ),
     };
   }
@@ -302,7 +302,7 @@ export async function signOutFromBrowser(): Promise<AuthResult<void>> {
       success: false,
       error: createAuthError(
         "auth_network_error",
-        "Verdarium could not complete sign-out. Please try again.",
+        "Verdantry could not complete sign-out. Please try again.",
       ),
     };
   }

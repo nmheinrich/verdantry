@@ -2,7 +2,7 @@
 
 **Status:** in progress — tokens, type utilities, UI primitives, and tiles/filters/navigation are applied (#5, #6/#7 merged; the tile, filters and nav were also added to the design system artifact on 2026-09-24). Blocked on hosting the TAY Roony font (`TAYROONY_WOFF2_URL` in Vercel, tracked in `ROADMAP.md`) before the acceptance criteria below can be verified · **Roadmap:** Now · **Owner:** Heinrich
 
-**Source of truth:** the Verdarium design system artifact, https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN (synced from `main@cf318bb` on 2026-09-24, then adjusted). Read its `project/README.md` and `project/tokens.json` before any UI work.
+**Source of truth:** the Verdantry design system artifact, https://claude.ai/artifact/LH7dSvQKKg6XxccrmMcwjN (synced from `main@cf318bb` on 2026-09-24, then adjusted). Read its `project/README.md` and `project/tokens.json` before any UI work.
 
 ## Problem
 The app's tokens, type and UI primitives have drifted from the intended look. The design system redesigns them. Its specific changes:

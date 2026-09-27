@@ -313,7 +313,7 @@ const READABLE_CARE_EXCEPTIONS: Record<string, string> = {
   "Care note must be 140 characters or fewer.":
     "Care notes can be up to 140 characters.",
   "Specimen not found or access denied.":
-    "Verdarium could not find this specimen in your archive.",
+    "Verdantry could not find this specimen in your archive.",
 };
 
 function normalizeCareError(
@@ -337,7 +337,7 @@ function normalizeCareError(
     case "42501":
       return createCareError(
         code,
-        "Verdarium could not verify access to this botanical record. Please sign in again and retry.",
+        "Verdantry could not verify access to this botanical record. Please sign in again and retry.",
       );
 
     case "23505":
@@ -349,7 +349,7 @@ function normalizeCareError(
     default:
       return createCareError(
         code,
-        "Verdarium could not update the care record. No visible changes were made.",
+        "Verdantry could not update the care record. No visible changes were made.",
       );
   }
 }
@@ -391,7 +391,7 @@ async function runCareMutation(
         success: false,
         error: createCareError(
           "invalid_care_response",
-          "Verdarium received an unexpected response while updating the care record.",
+          "Verdantry received an unexpected response while updating the care record.",
         ),
       };
     }
@@ -405,7 +405,7 @@ async function runCareMutation(
       success: false,
       error: createCareError(
         "care_network_error",
-        "Verdarium could not reach the private archive. Please check your connection and try again.",
+        "Verdantry could not reach the private archive. Please check your connection and try again.",
       ),
     };
   }
@@ -510,7 +510,7 @@ export async function loadSpecimenCareHistory(
       success: false,
       error: createCareError(
         "invalid_specimen_id",
-        "Verdarium could not identify the botanical record.",
+        "Verdantry could not identify the botanical record.",
       ),
     };
   }
@@ -571,7 +571,7 @@ export async function loadSpecimenCareHistory(
           success: false,
           error: createCareError(
             "invalid_care_history",
-            "Verdarium received an unexpected care-history record.",
+            "Verdantry received an unexpected care-history record.",
           ),
         };
       }
@@ -588,7 +588,7 @@ export async function loadSpecimenCareHistory(
       success: false,
       error: createCareError(
         "care_history_network_error",
-        "Verdarium could not retrieve the stewardship history. Please check your connection and try again.",
+        "Verdantry could not retrieve the stewardship history. Please check your connection and try again.",
       ),
     };
   }

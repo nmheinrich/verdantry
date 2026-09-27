@@ -1,7 +1,10 @@
 import { DEFAULT_THEME, THEMES } from "@/constants";
 import type { ThemeId } from "@/types";
 
-const THEME_STORAGE_KEY = "verdarium.theme";
+const THEME_STORAGE_KEY = "verdantry.theme";
+// Pre-rename key (the app was "Verdarium"). Read as a fallback only, so an
+// existing browser's theme choice survives the rename.
+const LEGACY_THEME_STORAGE_KEY = "verdarium.theme";
 
 export function isThemeId(value: unknown): value is ThemeId {
   return (
@@ -17,7 +20,8 @@ export function getStoredTheme(): ThemeId {
 
   try {
     const storedTheme =
-      window.localStorage.getItem(THEME_STORAGE_KEY);
+      window.localStorage.getItem(THEME_STORAGE_KEY) ??
+      window.localStorage.getItem(LEGACY_THEME_STORAGE_KEY);
 
     return isThemeId(storedTheme)
       ? storedTheme

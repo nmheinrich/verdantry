@@ -2,7 +2,7 @@
 
 ## One line
 
-Verdarium turns a personal plant collection into a beautiful, organized botanical archive and makes ongoing care easier.
+Verdantry turns a personal plant collection into a beautiful, organized botanical archive and makes ongoing care easier.
 
 ## Who it's for
 

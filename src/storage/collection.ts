@@ -256,6 +256,11 @@ function persistCollection(
   };
 }
 
+// Pre-rename key (the app was "Verdarium"). Read as a one-time migration
+// only, so an existing browser's local (signed-out) collection survives
+// the rename instead of appearing empty.
+const LEGACY_COLLECTION_STORAGE_KEY = "verdarium.collection";
+
 export function loadCollection():
   LoadCollectionResult {
   const readResult = readStorageItem(
@@ -274,6 +279,26 @@ export function loadCollection():
   }
 
   if (readResult.value === null) {
+    const legacyReadResult = readStorageItem(
+      LEGACY_COLLECTION_STORAGE_KEY,
+    );
+
+    if (
+      legacyReadResult.success &&
+      legacyReadResult.value !== null
+    ) {
+      // Carry it forward under the new key. If the write fails, the
+      // legacy data below is still returned, so nothing is lost either way.
+      writeStorageItem(
+        COLLECTION_STORAGE_KEY,
+        legacyReadResult.value,
+      );
+
+      return parseCollectionData(
+        legacyReadResult.value,
+      );
+    }
+
     const emptyCollection =
       createEmptyCollectionStorage();
 

@@ -33,7 +33,7 @@ Get a coherent, polished MVP into the hands of real plant collectors and find ou
 | Care in the expanded specimen view (record, note, undo, snooze, skip from the record) | `specs/001-care-on-tiles.md` | Merged (#9) |
 | Require confirm password on sign up | — | Merged (#10) |
 | Delete account (Settings danger zone; immediate, permanent, no soft delete) | — | Merged (#11); not yet confirmed on production — needs a disposable-account test |
-| Confirm the product name — a live `verdarium.green` was found; decide keep or rename before the README rewrite and demo capture | — | Needs decision (Heinrich) |
+| Rename Verdarium → Verdantry (a live `verdarium.green` was too close). Copy, docs and the two localStorage keys renamed with a fallback migration; the GitHub repo, Vercel project, and any Stripe Projects label are separate, Heinrich-run CLI steps | — | PR (code); infra renames pending |
 | **Bug:** share links returned 404 in production (no SPA rewrite) | — | Fixed (#3) |
 | **Bug:** production blank after first Git-built deploy (Supabase env overridden in `vite.config.ts`) | — | Fixed (#4) |
 | **Bug:** export and import are not reachable in the app (`ExportCollectionForm` and `ImportCollectionForm` are never rendered) | — | Fixed in phase 3 (Settings; import now writes to the cloud archive) |
@@ -85,6 +85,7 @@ Get a coherent, polished MVP into the hands of real plant collectors and find ou
 
 | Date | Decision |
 |---|---|
+| 2026-09-27 | Renamed Verdarium → **Verdantry**. A live `verdarium.green` (a different, unrelated site) was judged too close to the product name. Checked `verdantry` for collisions first: no GitHub repo, no npm package, no App Store/Play Store listing, no Google hits, and `verdantry.com`/`.app`/`.co`/`.garden`/`.io` are all unregistered. No dedicated domain purchased — the project stays a portfolio piece, embedded (iframe) at `heinrichnowak.work/verdantry` on Heinrich's personal site, which needs no app-side changes. In this PR: all product copy and docs, `package.json`, and the two renamed localStorage keys (`verdantry.theme`, `verdantry.collection`), each with a one-time fallback read of the old key so an existing browser's local theme or signed-out collection isn't lost. Not in this PR, run separately by Heinrich via CLI: the GitHub repo rename, and (if a clean method exists) the Vercel project and Stripe Projects labels |
 | 2026-09-24 | First run of `routines/weekly-roadmap-review.md`. Redesign (#5–#7) and care-on-tiles (#8) were confirmed working on production, signed in, by Heinrich; confirm-password (#10) and delete account (#11) have not been separately confirmed on production yet |
 | 2026-09-24 | Considered letting an account hold more than one collection; declined for now. It conflicts with the stated "one account, one collection" positioning and the `collections_owner_id_key` invariant, and the likely underlying need (organizing a large archive) is probably already served by `location`, `tags` and the existing filters. Revisit only if real usage shows a specific need a second collection actually solves (for example a hard privacy boundary, or a distinct sharing scope) |
 | 2026-09-24 | Reviewed and ranked six post-MVP feature ideas (public collections, stats, journal, multi-device polish, taxonomy database, image uploads); none scheduled — see Later, ranked highest to lowest |
@@ -99,5 +100,5 @@ Get a coherent, polished MVP into the hands of real plant collectors and find ou
 | 2026-09-24 | Support link on hold |
 | 2026-09-24 | TAY Roony stays out of git and is fetched at Vercel build time from a private source |
 | 2026-09-24 | Only the newest design system artifact counts; older redesign artifacts are superseded |
-| 2026-09-24 | Redesign: the Verdarium design system artifact is the visual source of truth |
+| 2026-09-24 | Redesign: the Verdantry design system artifact is the visual source of truth |
 | 2026-09-23 | Real customer notes are kept out of the public repo (`customers/private/`, gitignored) |

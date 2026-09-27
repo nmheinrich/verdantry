@@ -25,7 +25,7 @@ export function AppHeader({
         <div className="flex min-h-[4.5rem] items-center justify-between gap-4">
           <div className="flex min-w-0 flex-col gap-1.5">
             <p className="font-display text-2xl leading-none tracking-[0.03em] text-[var(--color-text-primary)]">
-              Verdarium
+              Verdantry
             </p>
             <p className="metadata-label truncate">
               Botanical archive
