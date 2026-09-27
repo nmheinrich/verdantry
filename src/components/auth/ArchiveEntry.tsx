@@ -53,7 +53,7 @@ export function ArchiveEntry({
               after you identify yourself.
             </p>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <Button
                 type="button"
                 disabled={isInitializing}
@@ -63,6 +63,13 @@ export function ArchiveEntry({
                   ? "Checking private session…"
                   : "Sign in or create account"}
               </Button>
+
+              <a
+                href="/shared/330d6b77-3998-49ed-87eb-9b038fc5183b"
+                className="relative inline-flex h-10 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[var(--radius-md)] border border-transparent px-[1.125rem] text-sm font-medium leading-none tracking-[0.005em] text-[var(--color-text-secondary)] transition-[background-color,color] duration-[160ms] ease-[var(--ease-standard)] hover:bg-[var(--color-botanical-soft)] hover:text-[var(--color-text-primary)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)] active:bg-[var(--color-selection)]"
+              >
+                See my personal collection
+              </a>
             </div>
 
             {state.status === "error" ? (
