@@ -86,6 +86,9 @@ redirect to `/verdantry/shared/:token`.
 - Local development: `npm run dev`, then open `/verdantry/`.
 - Production build: `npm run build`.
 - Routing checks: `npm run test:routing` after building.
+- Compiled Vercel route checks: run `vercel build`, then
+  `npm run test:vercel-routing`. The explicit `/` rewrite is necessary: Vercel
+  can compile `/:path*` without matching the literal homepage slash.
 - Keep using the original Sites URL for portfolio administration until proxy
   sign-in and saving have been verified. The portfolio is currently owner-private;
   the Vercel rewrite does not change its access policy.
