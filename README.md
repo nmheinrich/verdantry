@@ -73,3 +73,33 @@ export default defineConfig([
 ])
 
 ```
+
+## Portfolio and Verdantry routing
+
+The Vercel project serves Verdantry at `/verdantry/` and forwards other paths
+(including `/`, `/admin`, and the portfolio assets) to the existing Sites portfolio.
+Vite builds into `dist/verdantry`; Vercel must publish **dist**, not
+`dist/verdantry`. Existing files are served directly, while nested application
+routes fall back to `dist/verdantry/index.html`. Legacy `/shared/:token` links
+redirect to `/verdantry/shared/:token`.
+
+- Local development: `npm run dev`, then open `/verdantry/`.
+- Production build: `npm run build`.
+- Routing checks: `npm run test:routing` after building.
+- Keep using the original Sites URL for portfolio administration until proxy
+  sign-in and saving have been verified. The portfolio is currently owner-private;
+  the Vercel rewrite does not change its access policy.
+
+Before switching DNS, verify the Vercel preview: `/` and portfolio assets,
+`/verdantry/`, direct shared-link reloads, application images/fonts, sign-in,
+and cloud synchronization. Confirm Supabase Site URL and redirect allowlists
+use the intended `/verdantry/` URL where applicable. Browser-local collection
+and session data on another origin do not migrate with DNS; export any local
+collection that needs to move.
+
+After verification, add `heinrichnowak.work` in the Vercel project's domain
+settings and enter **Vercel's returned DNS records** at the DNS provider.
+Do not point this domain directly to Sites for this combined routing setup.
+These rules apply to every domain attached to this Vercel deployment;
+review the existing `.com` assignment before merging. No DNS, domain,
+Supabase, or portfolio sharing settings are changed by this repository update.

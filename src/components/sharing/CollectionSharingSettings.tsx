@@ -1,3 +1,4 @@
+import { appPath } from "@/lib/routing";
 import {
   useEffect,
   useMemo,
@@ -35,7 +36,7 @@ const SHARED_DESCRIPTION_MAX_LENGTH = 500;
 function buildSharingUrl(
   token: string,
 ): string {
-  return `${window.location.origin}/shared/${token}`;
+  return new URL(appPath(`shared/${encodeURIComponent(token)}`), window.location.origin).href;
 }
 
 export function CollectionSharingSettings() {

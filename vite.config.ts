@@ -8,6 +8,9 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
+    base: "/verdantry/",
+    build: { outDir: "dist/verdantry" },
+
     plugins: [
       react(),
       tailwindcss(),

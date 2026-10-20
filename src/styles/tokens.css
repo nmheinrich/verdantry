@@ -5,14 +5,6 @@
  * Type families live in index.css (@theme: font-display, font-serif, font-sans).
  */
 
-@font-face {
-  font-family: "TAYRoony";
-  src: url("/fonts/TAYRoony.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   /* Color */
   --color-background: #f8f6f0;
