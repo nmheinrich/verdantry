@@ -11,7 +11,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test:routing": "node scripts/check-routing.mjs"
+    "test:routing": "node scripts/check-routing.mjs",
+    "test:vercel-routing": "node scripts/check-vercel-routing.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",
