@@ -10,7 +10,8 @@
     "prebuild": "npm run fonts",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:routing": "node scripts/check-routing.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.116.0",

@@ -1,3 +1,4 @@
+import { appPath } from "@/lib/routing";
 import { useState } from "react";
 
 import {
@@ -350,7 +351,7 @@ export function SharedCollectionView({
                 </div>
 
                 <a
-                  href="/"
+                  href={appPath()}
                   className="inline-flex h-10 shrink-0 items-center justify-center whitespace-nowrap rounded-[var(--radius-md)] border border-transparent bg-[var(--color-botanical)] px-[1.125rem] text-sm font-medium leading-none tracking-[0.005em] text-[var(--color-text-on-botanical)] shadow-[var(--shadow-control)] transition-[background-color,box-shadow,transform] duration-[160ms] ease-[var(--ease-standard)] hover:bg-[var(--color-botanical-hover)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-focus)] active:translate-y-[0.5px] active:scale-[0.985]"
                 >
                   Begin your archive

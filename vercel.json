@@ -1,6 +1,25 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/((?!.*\\.).*)", "destination": "/index.html" }
+    {
+      "source": "/verdantry",
+      "destination": "/verdantry/index.html"
+    },
+    {
+      "source": "/verdantry/:path*",
+      "destination": "/verdantry/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://heinrich-nowak-portfolio.nowakmataheinrich.chatgpt.site/:path*"
+    }
+  ],
+  "outputDirectory": "dist",
+  "redirects": [
+    {
+      "source": "/shared/:path*",
+      "destination": "/verdantry/shared/:path*",
+      "permanent": false
+    }
   ]
 }

@@ -1,3 +1,4 @@
+import { getSharedRouteToken } from "@/lib/routing";
 import {
   useEffect,
   useMemo,
@@ -115,22 +116,6 @@ type SpecimenMutationOutcome =
       message: string;
     };
 
-function getSharedRouteToken(): string | null {
-  const match = window.location.pathname.match(
-    /^\/shared\/([^/]+)\/?$/,
-  );
-
-  if (!match) {
-    return null;
-  }
-
-  try {
-    return decodeURIComponent(match[1]);
-  } catch {
-    return match[1];
-  }
-}
-
 export default function App() {
   const shouldReduceMotion = useReducedMotion();
 
@@ -141,7 +126,7 @@ export default function App() {
   } = useAuth();
 
   const sharedRouteToken =
-    getSharedRouteToken();
+    getSharedRouteToken(window.location.pathname);
 
   const [
     sharedCollection,
